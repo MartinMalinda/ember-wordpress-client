@@ -1,0 +1,12 @@
+{{outlet}}
+
+<div class="ui container">
+  {{#each model as |post|}}
+  
+    
+    {{#link-to 'post' post class="ui segment"}}
+      {{post.title}}
+    {{/link-to}}
+  
+  {{/each}}
+</div>

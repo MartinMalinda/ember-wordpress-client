@@ -1,0 +1,6 @@
+{
+  "name": "ember-wordpress-client",
+  "dependencies": {
+    "semantic-ui": "^2.2.10"
+  }
+}

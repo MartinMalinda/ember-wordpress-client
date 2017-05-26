@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="ui top fixed menu">
+  {{link-to 'Index' 'index' class="item"}}
+
+  {{#each model as |page|}}
+    {{link-to page.title 'page' page class="item"}}
+  {{/each}}
+</div>
 
 {{outlet}}
